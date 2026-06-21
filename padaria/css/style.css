@@ -179,10 +179,12 @@ nav a:hover {
     line-height: 1.5;
     margin-bottom: 15px;
     font-size: 1.1em;
+     transition: opacity 0.5s ease;
 }
 
 #autor-comentario {
     font-weight: bold;
+     transition: opacity 0.5s ease;
 }
 
 .card-comentario {
@@ -197,8 +199,14 @@ nav a:hover {
     text-align: center;
     position: relative;
     border: 3px dashed var(--color-span);
+    transition: all 0.5s ease;
 
 }
+
+.esconder{
+    opacity: 0;
+}
+
 
 .sobre-nos {
     flex: 1;
@@ -328,6 +336,7 @@ nav a:hover {
     font-size: 1.6em;
     margin-bottom: 30px;
 }
+
 
 
 @media (max-width: 768px) {
