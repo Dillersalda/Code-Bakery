@@ -140,6 +140,99 @@ nav a:hover {
     margin-right: 5px;
     text-align: center;
 }
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;}
+
+.modal.ativo{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 10000;
+}
+
+.modal-conteudo{
+    background-color: #f8f0dc;
+    width: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 3px dashed var(--color-span);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.3s ease; opacity: 0.3s ease;
+}
+
+.modal.ativo .modal-conteudo{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-conteudo h2{
+    text-align: center;
+    color: var(--color-nav-hover);
+    font-size: 2rem;
+  font-family:"Playwrite IE",cursive;
+}
+
+.modal-conteudo button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #c68a5c;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.btn-criar-conta{
+    width: 100%;
+    height: 50px;
+}
+.modal-conteudo button:hover{
+    transform: scale(1.03);
+}
+
+.modal-conteudo input{
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #d7b08b;
+    background-color: #fffaf3;
+    font-size: 1rem;
+}
+
+.btn-fechar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background:none;
+    font-size: 1.2rem;
+    color: #7a4d2c;
+}
+
 /*  /   /   /   /   /   /   /   Corpo do site / /   /   /   /   */
 .apresentacao {
     display: flex;
@@ -206,7 +299,9 @@ nav a:hover {
 .esconder{
     opacity: 0;
 }
-
+.p-delivery {
+    color:white
+}
 
 .sobre-nos {
     flex: 1;

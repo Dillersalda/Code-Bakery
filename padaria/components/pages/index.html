@@ -35,11 +35,24 @@
             <div class="delivery-login">
             <input type="text" placeholder="Email">
             <input type="password" placeholder="Senha">
-            <button>Cadastre-se!</button>
+    
             <button>Entrar</button>
+            <p class="p-delivery">
+                Não possui uma conta?
+                <button id="btn-cadastro">Cadastre-se!</button>
+            </p>
         </div>
     </section>
-        
+        <div id="modal-cadastro" class="modal">
+            <div class="modal-conteudo">
+                <button id="fechar-modal" class="btn-fechar">✖</button>
+                <h2>Cadastre-se</h2>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="senha" placeholder="Senha">
+                <button class="btn-criar-conta">Criar conta</button> 
+            </div>
+        </div>
     <!--Cards dos produtos e Promoções do dia-->
 
 
@@ -116,5 +129,6 @@
     
     </footer>
     <script src="/Code-Bakery/padaria/components/Javascript/comentarios.js"></script>
+    <script src="/Code-Bakery/padaria/components/Javascript/modal.js"></script>
 </body>
 </html>
