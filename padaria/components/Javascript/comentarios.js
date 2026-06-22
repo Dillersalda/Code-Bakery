@@ -12,6 +12,11 @@ const comentarios = [
     {
         texto:"O Javalatte aumentou minha produtividade!",
         autor:"Carlos Full Stack"
+    },
+
+    {
+        texto:"Depois que provei uma vez, toda semana preciso do meu Cakescript",
+        autor:"Soninha Back-love"
     }
 ];
 

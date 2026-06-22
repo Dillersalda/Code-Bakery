@@ -170,6 +170,9 @@ nav a:hover {
 .modal-conteudo{
     background-color: #f8f0dc;
     width: 350px;
+    height: auto;
+    max-height: 40vh;
+    overflow-y: auto;
     padding: 25px;
     border-radius: 20px;
     border: 3px dashed var(--color-span);
@@ -185,7 +188,7 @@ nav a:hover {
 }
 
 .modal.ativo .modal-conteudo{
-    transform: scale(1);
+
     opacity: 1;
 }
 
