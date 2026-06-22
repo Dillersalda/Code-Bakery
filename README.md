@@ -1,2 +1,16 @@
-# Code-Bakery
-Site inicialmente criado para servir como treino de HTML e CSS de Dillersalda
+# CodeBakery
+
+Projeto de uma cafeteria fictícia desenvolvido para praticar HTML, CSS e JavaScript.
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Funcionalidades
+
+- Layout responsivo
+- Modal de cadastro
+- Validação de formulário
+- Carrossel de comentários
